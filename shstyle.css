@@ -1,0 +1,283 @@
+@font-face{font-family:'SF-Pro-Display-Regular';font-style:normal;src:url("../fonts/SF-Pro-Display-Regular.html"), url("../fonts/SF-Pro-Display-Regular.html");}
+@media (min-width: 1025px)  {
+    .img-line .row .col-md-4.m-l{
+
+    }
+    .img-line .row .col-md-4.m-r{
+
+    }
+    .img-line .row .col-md-8{
+        font-size: 17px;
+        color: #363535;
+    }
+    .col-md-12.pad-0 p{
+        margin-top:10px;
+        margin-bottom: 0 !important;
+    }
+    .pad-0{
+
+  } 
+    
+    .sh-box-wrap-2{padding:0px 0 20px 20px; margin-top: 5px; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sh-box-wrap-2{padding:auto !important; margin-top: 5px; }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .img-line .row .col-md-4.m-l,.img-line .row .col-md-4.m-r,.img-line .row .col-md-8{
+    padding: auto !important;
+  } 
+    .sh-box-wrap-2{padding:auto !important; margin-top: 5px; }
+}
+@media screen and (max-width:480px){
+    .sh-box-wrap-2{padding:auto !important; margin-top: 5px; }
+
+.pad-0{
+        padding: auto !important;
+  } 
+
+}
+.do-underline h3{
+    text-transform: uppercase; font-size: 18px;
+    margin: 10px 0;
+    padding: 14px 0;
+}
+.sh-c-color{
+    color: red;
+}
+.do-underline h3:after{
+    content: '';
+    position: absolute;
+        display: table-cell;
+    width: 48px;
+    height: 0;
+    border-bottom: 1px solid red;
+}
+.do-fullunderline h3{
+
+    text-transform: uppercase; font-size: 18px;
+
+}
+.do-fullunderline h3:after{
+    content: '';
+    position: absolute;
+    display: table-cell;
+    width: 85%;
+    height: 0;
+    border-bottom: 1px solid red;
+}
+.sh-address{
+    padding: 10px 0;
+}
+.sh-bg-gray {
+    background: #e6e7e2;
+    padding: 30px 0;
+}
+.sh-lined-L h1::before {
+    content: '';  position: absolute;  top: -80px;  left: 50%;  width: 1px;  height: 40px;
+}
+.location-two{  }
+.location-two .container h1
+{position:relative;text-align:center;text-transform:uppercase;color:#000;font-family:"DidotBold";font-weight:normal;padding:20px 0 20px;}
+
+
+.sh-c-red{
+    color: red !important;
+}
+.sh-location h3{  }
+.sh-location p a{
+     text-decoration: none; color: #a8a7aa;
+}
+.sh-location h3{
+    text-transform: uppercase; font-size: 18px;
+    margin: 10px 0;
+    padding: 14px 0;
+}
+.sh-location-map{
+    padding: 40px 0;
+}
+.sh-location-map h1{
+    text-transform: uppercase;
+    margin: 10px 0; text-align: center;
+    padding: 20px 0 30px; font-family:"DidotBold";
+}
+.sh-location h3:after{
+    content: '';  display: block;  left: 13px;  bottom: 82px;  width: 110px;  height: 2px;  border: 1px solid #e30613;  margin-top: 6px;
+}
+ul.getThere {
+    padding: 0; margin: 0;
+}
+ul.getThere li{
+    list-style: none; padding-left: 50px !important; padding: 10px 0 ;
+}
+ul.getThere li:nth-child(1){
+    background: url("../images/icon-location-bus.html") left no-repeat;
+}
+ul.getThere li:nth-child(2){
+    background: url("../images/icon-location-train.jpg") left no-repeat;
+}
+ul.getThere li:nth-child(3){
+    background: url("../images/icon-location-plane.jpg") left no-repeat;
+}
+.today{  background: #f1f1f1;
+}
+.TodayHead{  background:#d56d71 !important; color: white !important;  font-size: 18px;
+    text-align: center;
+    padding: 10px 0; margin-top: 30px;
+}
+.today p{  color: #515151; font-size: 12px; text-align: center; padding-bottom: 10px;
+}
+.Todaygram{
+    font-size: 16px;
+    color: #010000;
+    text-align: center;
+    padding: 10px 0;
+}
+.timing-shop{
+    font-size: 12px; text-align: center;
+}
+.timing-shop-head th{
+    padding: 4px 0 !important; margin: 0 !important; text-align: center;
+}
+.timing-shop-head th.active{
+    background:#d56d71 !important; color: white !important;
+}
+.sh-location.gallery{
+    background: white;
+    text-align: center;
+    padding: 10px; margin: 10px 0;
+}
+
+.sh-location.gallery img{
+
+}
+/* Float Shadow */
+.sh-location.gallery{
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.sh-location.gallery:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 100%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+.sh-location.gallery:hover, .sh-location.gallery:focus, .sh-location.gallery:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+.sh-location.gallery:hover:before, .sh-location.gallery:focus:before, .sh-location.gallery:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.sh-box-wrap{padding:0 0 20px 20px; margin-bottom: 20px}
+
+ul.sh-location-list{
+    padding: 0px; margin: 0; list-style: none;
+}
+ul.sh-location-list li{
+    margin:6px 0 0;
+    line-height: 18px;
+}
+ul.sh-location-list li a{
+    color: #212529; text-decoration: none;
+}
+ul.sh-location-list li a:hover{
+    color: #050607;
+}
+.sh-heading h1{position:relative;display:inline-block;padding-bottom:60px;}
+.sh-heading h1::after{content:'';position:absolute;top:-56px;left:50%;transform:translate(-50%, 0%);-moz-transform:translate(-50%, 0%);-webkit-transform:translate(-50%, 0%);display:block;width:100px;height:42px;background:url("../images/devider.svg") no-repeat 0px center;background-size:100%;z-index:1;}
+
+.sh-heading{position:relative;text-align:center;text-transform:uppercase;padding-top:1px;color:#000;background:#fff;font-family:"DidotBold";font-weight:normal;}
+.sh-blog .sh-search{
+
+}
+.sh-blog .sh-search input{ width: 70%; float: left; margin: 0;border-radius: 0 !important;}
+.sh-blog .sh-search button{ width: 29%; float: left; background: #e30613 !important; border-radius: 0 !important; color: white; text-align: center}
+.blog-list-post .thumb-post{
+    margin:10px 0 10px 0;
+    background: #f5f5f5;
+    padding: 10px;
+}
+.blog-list-post .thumb-post:hover{
+    margin:10px 0 10px 0;
+    background: #ff4b4b;
+    padding: 10px;
+    color: #fff !important;
+
+}
+.blog-list-post .thumb-post .title{
+    line-height: 20px; min-height: 20px; max-height: 60px; overflow: hidden; margin-bottom: 10px;
+}
+.blog-list-post .thumb-post .title a{
+    text-decoration: none; color:#212121;
+    font-family:"PTSans" !important; letter-spacing: 2px; font-size: 14px;
+    text-transform: capitalize;
+}
+.blog-list-post .thumb-post .date{
+    text-align: right; right: 0;
+}
+ul.blog-list-Categories{
+    padding: 0; margin: 0;
+}
+ul.blog-list-Categories li{
+    list-style: none;
+    background: url("../images/list-arrow-2.png") no-repeat left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+ul.blog-list-Categories li a{
+ color: #212121; text-decoration: none;
+    font-family:"PTSans" !important; letter-spacing: 2px; font-size: 14px;
+}
+ul.blog-list-Categories li a:hover{
+    color: red; text-decoration: none;
+
+}
+.main-post-dis p,.main-post-dis .img-line{
+    font-family: "SF-Pro-Display-Regular";  font-size: 17px; text-align: justify;
+    color: #363535;
+}
+.main-post-title{
+    color: red;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Display-Regular";
+    border-bottom: 1px solid #f3cccd;
+    padding: 10px 0 10px;
+    margin: 0 0 10px 0;
+}
+.img-line {
+    margin-top:20px; 
+}
+.col-md-12.p-0 p{
+    margin-top:20px; 
+}
+.do-grid-showcase .do-showcase .do-showcase-info h3{
+    text-align: center !important;
+}
+.blog-list-post.fontMe-18  .thumb-post .title a{
+    font-size: 18px !important; line-height: 26px !important;
+}

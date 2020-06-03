@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+\
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href ="plugins.css" rel ="stylesheet">
+	<link href="bootstrap.min.css" rel="stylesheet">
+  	<link href="shstyle.css" rel="stylesheet">
+	<link href="jquery.fancybox.css" rel="stylesheet">
+
+	<link href="style.css" rel="stylesheet">
+	<link href="custom.css" rel="stylesheet">
+	<link href="bootstrap_datepicker.css" rel="stylesheet">
+	<link href="time_picker.css" rel="stylesheet">
+<script type="application/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+
+</script>
+	<style>
+    /* Style the Image Used to Trigger the Modal */
+
+
+.img-responsive
+{
+	max-width: 100%;
+    height: 260px;
+    display: unset;
+}
+.col-lg-4:hover .do-showcase
+{
+	opacity: 1;
+}
+.col-lg-4
+{
+	text-align:center;
+} .col-4 a
+{
+ float:left;
+    z-index: 9999;
+}
+.do-showcase
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -ms-justify-content: center;
+    align-content: center;
+    align-items: center;
+    -ms-flex-align: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+	 
+	    
+    #logo{
+  max-width:150px;
+  max-height: 1000px;
+  border: px solid black;
+  border-radius: 50%;
+  align-items: center;
+  border: 8px solid black;
+  
+}
+#shivam{
+  margin-bottom: -50px;
+  
+}
+.footer {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+  margin-top: 0px;
+  image-orientation:center;
+}
+.ffooter {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  margin-top: 0px;
+  image-orientation:center;
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 40px;
+  text-decoration: none;
+  margin: 10px;
+  color: red;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 70%;
+  position:top-right;
+}
+#lo{
+  max-width:200px;
+  max-height: 1000px;
+  border: px solid black;
+  border-radius: 50%;
+  align-items: center;
+  border: 8px solid black;
+  
+}
+.fa:hover{
+    color: #fff;
+    text-decoration: none;
+    transform: scale(2);
+    transition: 1s;
+}
+.fa-facebook {
+    color: #3B5998;
+}
+}
+.fa-instagram {
+    color: #125688;
+}
+
+#myImg:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#lo{
+  max-width:200px;
+  max-height: 1000px;
+  border: px solid black;
+  border-radius: 50%;
+  align-items: center;
+  border: 8px solid black;
+  
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.do-contact-office span ,.do-contact-office a ,.do-breadcrumbs li ,.do-breadcrumbs li a
+{
+    color:#000000;
+}
+
+.do-contact-office h3 {
+    color: chocolate !important;
+    font-size:20px;
+}
+.do-contact-form input::placeholder ,.do-contact-form textarea::placeholder {
+  color: #000000;
+}
+    
+    .modal .close {
+    font-size: 107px;
+    margin-top: 39px;
+    color: #ffffff;
+}
+ .modal1 .close1 {
+    font-size: 107px;
+    margin-top: 39px;
+    color: #ffffff;
+}
+</style>
+
+</head>
+<body>
+	<div class="do-wrapper">
+		<header>
+			 <div class="do-header-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light pb-0 sticky-top">
+          <div class="container" style="width:80%">
+            <button id="menu_toggle" class="navbar-toggler mr-auto" type="button"> <i class="ion ion-android-menu"></i> </button>
+             <a href="https://www.ankit14.tk" class="do-mobile-logo"><img id="lo" src="https://b.imge.to/2019/07/18/1kUsV.png" alt="ankit" border="0"> </a>
+			<div class="do-main-menu collapse navbar-collapse" id="main_menu">
+                <ul class="navbar-nav">
+                <li class="nav-item do-brand-logo do-brand-icon"><a class="navbar-brand text-primary" href="index.html"><img src="https://b.imge.to/2019/07/18/1kUsV.png" title="ankit" alt="Surana" class="do-logo-icon"></a>
+                </li>
+                <li class="nav-item mr-auto"> <a class="nav-link active" href="index.html">Home</a> </li>
+				<li class="nav-item mr-auto"> <a class="nav-link  " href="about.html">About Us</a>
+                </li>
+                
+                  <li class="nav-item mr-auto"> <a title="Exclusive Wedding Jewellery" class="nav-link parent " href="javascript:void(0)">Products</a> <span class="do-menu-next ion ion-chevron-right"></span>
+                  <div class="do-secondary-menu"> <span class="do-menu-prev ion ion-chevron-left"></span>
+                    <ul>
+                      <li class="do-menu-img" style="text-align:center;">
+                         <span id="link-33">
+                          <div class="row no-gutters align-items-center h-100">
+                            <div class="col-4">
+	<a href="earrings.html" rel="link-38"><img src="https://suranajewellers.com/img/earring/B0A7276.jpg" alt="Product" class="img-fluid"/>
+	</a>
+								<h5>Earrings</h5>
+							 </div>
+							<div class="col-4"><a href="necklace.html" rel="link-39"><img src="https://images-na.ssl-images-amazon.com/images/I/71Ouh2Rq8oL._UL1000_.jpg" alt="Product" class="img-fluid"/>
+                             </a>
+								<h5>Necklace Sets</h5></div>
+                            <div class="col-4"><a href="bangles.html" rel="link-40"><img src="product_bangle.jpg" alt="Product" class="img-fluid"/>
+                            </a><h5>Bangles</h5></div>
+                          </div>
+                        </span>
+
+						
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </li>
+                
+                <li class="nav-item do-brand-logo do-brand-text"> <a class="navbar-brand text-primary" href="https://www.ankit14.tk"> 
+                  <font face='comic sans ms' size=6 COLOR='black'>ANKIT ARTISAN</font></a> </li>
+                
+				<li class="nav-item ml-auto"> <a class="nav-link " href="jewelry.html">The Craft</a> 
+                </li>
+				
+
+                <li class="nav-item ml-auto"> <a class="nav-link" href="contactus.html"  title="Locate Surana jewellers">Contact Us</a> </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+			<br>
+			<br>
+    </header>
+	<div class="do-banner-slider-wrap">
+		<div class="do-loader">
+		</div>
+		<ul id="banner_slider">
+		<li style="background: url(http://images.shaadisaga.com/shaadisaga_production/photos/pictures/000/784/060/new_large/The_Wedding_Conteurs.jpg?1553693151)" alt="Exclusive Jewellery" title="Surana Jewellery Collections"></li>
+		<li style="background: url(https://www.franchiseindia.com/uploads/news/fi/voyalla1000x562-102c1e0454.jpg)" alt="Exclusive Jewellery" title=" Jewellery Collections">
+			<a href="#"></a>
+		</li>
+		<li style="background: url(https://img.theculturetrip.com/768x432/wp-content/uploads/2016/09/jewel_terabass_wikicommons.jpg)"  alt="Exclusive Jewellery" title=" Jewellery Collections">
+		<a href="#"></a></li>
+		<li style="background: url(https://photos.wikimapia.org/p/00/04/71/13/09_full.jpg)"  alt="Diamonds Jewellery" title=" Jewellery Collections">
+		<a href="#"></a></li>
+		
+		</ul>
+	</div>
+    </header>
+	<div class="do-main-wrap">
+
+  
+
+  <!--Bridal-->
+  <section id="muhrat" class="bordered pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="do-heading do-lined">
+            <!--<h1>Surana Muhurat Wedding Jewellery</h1>-->
+            <h1> Ankit Artisan</h1>
+          </div>
+          <div class="text-center mw-75">
+            <p>Wedding are a deep-rooted element of our society, and Indian brides are known as symbols of beauty, pride and elegance. India is a vast country with different customs and traditions practiced even within the same state. Suranas has something which makes them unites- the Muhurat or the auspicious time for celebration. Bhuramal Rajmal Surana’s wedding collections are for every bride, from every part of India.</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+
+    <!--Gifts
+    <section>
+      <div class="row ">
+        <div class="col-lg-12 ">
+          <div class="bg-peach-2 do-gift-box-wide">
+            <div class="row">
+              <div class="col-lg-3 col-md-5 text-center">
+                <img src="images/hm-gift-img-1.jpg" title="Diamond Jewellery" alt="Diamond Necklace "/>
+              </div>
+              <div class="col-lg-6 col-md-7 text-lg-center text-md-left text-sm-center text-xs-center">
+                <div class="do-gift-text">
+                  <h2 class="text-uppercase h1">We make you<br>feel special</h2>
+                
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 text-center d-lg-block d-md-none d-sm-none d-xs-none">
+                <img src="images/hm-gift-img-2.jpg" title="Diamond Rings" alt="Pendants" class="float-lg-right float-md-none"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+   
+
+    <!--Brands-->
+    <section>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="do-lined">
+            <h2 class="h1">KUNDAN MEENA JEWELLERY</h2>
+          </div>
+          <div class="text-center mw-75">
+            <p>Kundan is a Sanskrit word which means pure sparkling gold or refined gold. In Kundan Jewellery the purest form molten gold is used to set stones. Aankit Artisan is traditionally handmade and no machines are used in making jewellery. Several articians are involved in creating each individual piece of jewellery. Every piece of kundan jewellery is a team effort with every individual craftperson working on a separate specialized portion. Each Surana Jaipur artisan of the team uses the particular technique that he is skilled at and together they create a beautiful piece of kundan Jewellery.</p>
+          </div>
+		  </div>  </div>  
+	 </section>	 
+	 <section>
+			<div class="do-lined">		
+				<h1>Products</h1>
+			</div>
+	 <div class="row products">
+	
+          <div class="col-lg-4">
+           <a href="earrings.html" rel="link-38">
+			<div class="do-showcase"></div>
+			<img src="https://suranajewellers.com/img/earring/B0A7276.jpg" class="img-responsive"></a>
+			<h5>Earrings</h5>
+          </div>
+          <div class="col-lg-4">
+            <a href="necklace.html" rel="link-39"><div class="do-showcase"></div><img src="https://images-na.ssl-images-amazon.com/images/I/71Ouh2Rq8oL._UL1000_.jpg" class="img-responsive"></a>
+				<h5>Necklace</h5>
+          </div>
+		  <div class="col-lg-4">
+            <a href="bangles.html" rel="link-40"> <div class="do-showcase"></div><img src="product_bangle.jpg" class="img-responsive" style=""></a>
+					<h5>Bangle</h5>
+          </div>
+        </div> 
+		
+		 
+      
+    </section>
+
+  
+    <section>
+      <div class="row">
+	   <div class="col-lg-12">
+			 <div id="customers_stories" class="do-content-block">
+          <div class="do-subsection">
+				<div class="do-lined">		
+					<h1>Testimonials</h1>
+				</div>
+            <div class="do-customer-stories row justify-content-center">
+              <div class="col-lg-4 col-md-6">
+                <div class="do-story-box">
+                  <div class="do-story-frame"> 
+                    <!--<img src="images/stories/story-neha.png" />-->
+                    <div class="do-story-from">  Chetan Singh, Jaipur  </div>
+                  </div>
+
+                  <p>We are very satisfied with the service provided by suranajewellers. And we are very happy to purchase in Suranas.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="do-story-box">
+                  <div class="do-story-frame"> 
+                    <!--<img src="images/stories/story-gowri.png" />-->
+                    <div class="do-story-from">  Mukesh Kumar ,Udaipur  </div>
+                  </div>
+                  <p>The most reliable and great service! Totally satisfied with the service. Absolutely you are our only choice for all future purchases. </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="do-story-box">
+                  <div class="do-story-frame"> 
+                    <!--<img src="images/stories/story-anamika.png" />-->
+                    <div class="do-story-from"> Arun Kumar, Delhi </div>
+                  </div>
+                  <p>Best in service and quality. I didn't had to compromise with anything, everything I got what I expected.thanks to suranajewellers team.<br>
+                    &nbsp;<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+		
+		
+      </div>
+    </section> 
+
+  </div>
+</div>
+
+<!--Footer-->
+<footer>
+	<!--<div class="do-footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<form class="do-subscribe-form" method="post" action="">
+						<div class="form-group input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">Subscribe the Surana Newsletter</div>
+							</div>
+							<input name="nws_email" class="form-control form-control-sm" placeholder="Email address"/>
+							
+							<button class="input-group-addon" type="submit"> <i class="ion ion-chevron-right"></i> </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>-->
+ 
+        <div class="ffooter">
+        <a href="https://www.facebook.com/kritarth.sharma.332" class="fa fa-facebook" target="_blank"> </a>
+        <a href="https://github.com/kritarth2121" class="fa fa-github" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/kritarth-sharma-15721216b/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UCw4JAfYigT8KW-9-C9FgCMw?view_as=subscriber" class="fa fa-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/kritarthsharma50/" class="fa fa-instagram" target="_blank"></a>
+        <b><h5>&#9734;proudly created by KRITARTH SHARMA<BR>
+          FOR YOUR PROFEESIONAL WEBSITE DEVELOPMENT WHATSAPP AT 7017756294
+          </h5></b>
+        </div>
+</footer> 
+<link href="plugins.css" rel="stylesheet">
+<script src="bootstrap.min.js" type="application/javascript"></script>
+<script src="plugins.js" type="application/javascript"></script> 
+<script src="bootstrap-datepicker.min.js" type="application/javascript"></script> 
+<script src="bootstrap-timepicker.js" type="application/javascript"></script> 
+<script src="jquery.cookie.js" type="application/javascript"></script> 
+<script src="modernizr.js" type="application/javascript"></script> 
+<script src="main.js" type="application/javascript"></script> 
+
+<!--Flip Book-->
+<script src="custom.js" type="application/javascript"></script> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141106857-1');
+</script>
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
+	<script src="jquery.fancybox.js"></script>
+	<script type="text/javascript">
+    $("[data-fancybox]").fancybox({ });
+	</script>
+</div> 
+</body> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
